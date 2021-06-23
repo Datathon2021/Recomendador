@@ -1,4 +1,4 @@
-# Recomendador
+# :vhs: Recomendador :vhs:
 
 ## El desafío: Construir un sistema de recomendación para predecir que nuevos contenidos, no previamente vistos, son más probables a ser elegidos para ver en Flow por un grupo de usuarios basándose en su historial de visualizaciones
 
@@ -29,7 +29,7 @@ Los valores del csv deberán estar separados por comas, y las variables no deben
 
 Junto con los datos del desafío, proporcionamos un archivo de envío de muestra para ilustrar el formato esperado que acabamos de describir para asegurarnos de que no se pierda ningún detalle. 
 
-## Datos 
+## Datos :file_folder:
 
 Una cohorte de 100k clientes con 4 meses de historia de visualizaciones   
 
