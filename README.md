@@ -28,3 +28,11 @@ Ej: 123, [1,2,3,4,5, …, 20].
 Los valores del csv deberán estar separados por comas, y las variables no deben tener cabecera. Para garantizar la concordancia de las predicciones con el set de testeo, los registros del csv deberán estar ordenados por account_id, de menor a mayor. 
 
 Junto con los datos del desafío, proporcionamos un archivo de envío de muestra para ilustrar el formato esperado que acabamos de describir para asegurarnos de que no se pierda ningún detalle. 
+
+## Datos 
+
+Una cohorte de 100k clientes con 4 meses de historia de visualizaciones   
+
+Metadata asociada al contenido que vieron esos clientes (Año lanzamiento, director, género, categoria, keywords...)
+
+
