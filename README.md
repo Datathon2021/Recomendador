@@ -13,6 +13,11 @@ La precisión promedio (AP) es el promedio de los valores de precisión en todos
 
 mAP se basa en las siguientes premisas: Relevancia del contenido: se haya visto al menos una vez en el set de testeo, correspondiente al mes a predecir posición (orden)
 
+![image](https://user-images.githubusercontent.com/59797580/123177717-31a66400-d45c-11eb-8618-3decb9e16f05.png)
+
+![image](https://user-images.githubusercontent.com/59797580/123177755-3e2abc80-d45c-11eb-985f-29a564a20da7.png)
+
+
 ## Baseline:
 Hay un baseline de la métrica a superar 
 
