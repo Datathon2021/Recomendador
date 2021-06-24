@@ -21,7 +21,12 @@ mAP se basa en las siguientes premisas: Relevancia del contenido: se haya visto 
 ## Baseline:
 Hay un baseline de la métrica a superar 
 
-## Envíos: 
+## Codigo 
+
+Tiene que ser código reproducible (OPEN SOURCE) 
+
+## Entregables: 
+### Resultados
 
 Los resultados deben enviarse en un archivo .csv con la siguiente estructura: 
 -Una columna que identifica a cada perfil con su id (account_id). 
@@ -32,12 +37,17 @@ Ej: 123, [1,2,3,4,5, …, 20].
 
 Los valores del csv deberán estar separados por comas, y las variables no deben tener cabecera. Para garantizar la concordancia de las predicciones con el set de testeo, los registros del csv deberán estar ordenados por account_id, de menor a mayor. 
 
-Junto con los datos del desafío, proporcionamos un archivo de envío de muestra para ilustrar el formato esperado que acabamos de describir para asegurarnos de que no se pierda ningún detalle. 
+### Código
+
 
 ## Datos :file_folder:
 
 Una cohorte de 100k clientes con 4 meses de historia de visualizaciones   
 
 Metadata asociada al contenido que vieron esos clientes (Año lanzamiento, director, género, categoria, keywords...)
+
+Junto con los datos del desafío, proporcionamos un archivo de envío de muestra para ilustrar el formato esperado que acabamos de describir para asegurarnos de que no se pierda ningún detalle. 
+
+
 
 
