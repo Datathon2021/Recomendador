@@ -49,5 +49,13 @@ Metadata asociada al contenido que vieron esos clientes (Año lanzamiento, direc
 Junto con los datos del desafío, proporcionamos un archivo de envío de muestra para ilustrar el formato esperado que acabamos de describir para asegurarnos de que no se pierda ningún detalle. 
 
 
+### Evaluación Final
+Una vez que el desafío finalice, los puntajes finales serán computados sobre un dataset de test privado.
+
+### Tabla de posiciones
+La tabla de posiciones se basa en el último envio de cada participante. 
+
+
+
 
 
