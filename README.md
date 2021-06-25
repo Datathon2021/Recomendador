@@ -1,6 +1,6 @@
 # :vhs: Recomendador :vhs:
 
-## El desafío: Construir un sistema de recomendación para predecir que nuevos contenidos, no previamente vistos, son más probables a ser elegidos para ver en Flow por un grupo de usuarios basándose en su historial de visualizaciones
+## El desafío: Construir un sistema de recomendación para predecir que nuevos contenidos, no previamente vistos, son más probables a ser elegidos para ver en la platafoma Flow por un grupo de usuarios basándose en su historial de visualizaciones
 
 ## Evaluación:  
 Se deberá entregar un listado de veinte (20) nuevos contenidos, no previamente vistos, de cada uno de los usuarios que se encuentren en de la base de entrenamiento 
