@@ -21,9 +21,7 @@ mAP se basa en las siguientes premisas: Relevancia del contenido: se haya visto 
 ## Baseline:
 Hay un baseline de la métrica a superar 
 
-## Codigo 
 
-Tiene que ser código reproducible (OPEN SOURCE) 
 
 ## Entregables: 
 ### Resultados
@@ -37,7 +35,9 @@ Ej: 123, [1,2,3,4,5, …, 20].
 
 Los valores del csv deberán estar separados por comas, y las variables no deben tener cabecera. Para garantizar la concordancia de las predicciones con el set de testeo, los registros del csv deberán estar ordenados por account_id, de menor a mayor. 
 
-### Código
+### Codigo 
+
+Tiene que ser código reproducible (OPEN SOURCE), el mismo debe estar explicado paso a paso, se debe detallar librerias y componentes.  
 
 
 ## Datos :file_folder:
