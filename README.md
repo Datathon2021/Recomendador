@@ -101,7 +101,7 @@ donde _Q_ es la cantidad de recomendaciones y AP(_q_) es la precisión promedio 
 <!-- $$ AP = \frac{\sum^{n}_{k=1}P(k) \times rel(k)}{número\ de\ ítems\ relevantes} $$ -->
 <span style="display:block;text-align:center">![image](https://latex.codecogs.com/gif.latex?AP%20%3D%20%5Cfrac%7B%5Csum%5E%7Bn%7D_%7Bk%3D1%7DP%28k%29%20%5Ctimes%20rel%28k%29%7D%7Bcantidad%5C%20de%5C%20items%5C%20relevantes%7D)</span>
  
-donde _n_ es la cantidad de elementos recomendados, P(_k_) es la precisión alcanzada hasta la posición _k_ de la lista y rel(_k_) es una función indicadora que vale 1 cuando el ítem de la posición $k$ resulta relevante (es decir, es un contenido efectivamente consumido), y 0 en caso contrario.
+donde _n_ es la cantidad de elementos recomendados, P(_k_) es la precisión alcanzada hasta la posición _k_ de la lista y rel(_k_) es una función indicadora que vale 1 cuando el ítem de la posición _k_ resulta relevante (es decir, es un contenido efectivamente consumido), y 0 en caso contrario.
 
 > Si todos los contenidos vistos en el set de *test* se encuentran ordenados consecutivamente entre las primeras recomendaciones para un usuario en particular, la AP tendrá un valor de 1. En el extremo opuesto, si no hay ningún contenido relevante entre las recomendaciones, la AP valdrá 0.
 
