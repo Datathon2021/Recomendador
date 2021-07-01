@@ -4,16 +4,24 @@
 
 La personalización de las plataformas digitales de contenidos audiovisuales es un aspecto central en la calidad de la experiencia de los usuarios. Dada la amplia oferta de posibilidades, los consumidores tienden a valorar las recomendaciones sobre qué contenidos ver que sean acordes a sus preferencias.
 
-Partiendo de las visualizaciones de un conjunto de usuarios de Flow correspondientes a un trimestre del 2021, el desafío consiste en predecir **qué nuevas visualizaciones tuvo cada perfil durante el mes siguiente**.
+Partiendo de las visualizaciones de un conjunto de usuarios de [Flow](https://web.flow.com.ar/) correspondientes a un trimestre del 2021, el desafío consiste en predecir **qué nuevas visualizaciones tuvo cada perfil durante el mes siguiente**.
 
+### Links importantes :grey_exclamation:
+
+* [Campus Party Digital Edition - Argentina](https://digital.campus-party.org/argentina/)
+* [Registro Datathon Telecom - Recomendador Flow](https://docs.google.com/forms/d/1i5FFLqflvZ7LB8Bt_mshW3FjO9rzeFGGBFWr0QHpZio)
+* [Entregables](https://docs.google.com/forms/d/e/1FAIpQLSeaSiQmJF51ws74DnhfRw1RBSXVFgqZu3BzWq-hc19htkMhzA/viewform)
+* [Bases y condiciones](https://drive.google.com/file/d/1ND9V-XvLQgkSGZXpgk_hWjvgSDYEM_e4/view)
 
 ## Datasets :open_file_folder:
 Para el desarrollo del recomendador, se proveen los siguientes conjuntos de datos:
-* **train._ext_**
+* **train.csv**
 * **metadata.csv**
 * **iso_3166_1.json**
 
-##### **train._ext_**
+Estos archivos pueden ser descargados desde [aquí](https://drive.google.com/drive/folders/1_CFg8F6kLzDCewceqPEvf66pzG6Y_s7y?usp=sharing).
+
+##### **train.csv**
 Este dataset contiene los registros de visualizaciones de contenidos de Flow del formato *video on demand* (VOD), correspondiente a una muestra aleatoria de más de 113 mil perfiles. A continuación, se detalla el diccionario de variables de esta tabla:
 - **customer_id**: código de identificación de cada cliente de Flow (puede tener asociados uno o más **account_id**)
 - **account_id**: código de identificación de cada perfil de Flow (se corresponde con un único **customer_id**)
@@ -84,7 +92,7 @@ Se deberá entregar un listado de veinte (20) nuevos contenidos, no previamente 
 
 Algunas consideraciones:
 - La evaluación se realizará al nivel de cada perfil (distinguibles por su **account_id**) y por grupo de contenidos (es decir, se busca predecir los distintos **content_id** de las visualizaciones, pero no los **asset_id**).
-- Los listados de prediccciones no deben incluir contenidos que los usuarios ya hayan consumido al menos una vez durante el período del set de *train*. Nos interesa que el sistema de recomendación pueda sugerir títulos que resulten novedosos, no que sea reiterativo en relación al historial de visualizaciones de cada perfil.
+- Los listados de predicciones no deben incluir contenidos que los usuarios ya hayan consumido al menos una vez durante el período del set de *train*. Nos interesa que el sistema de recomendación pueda sugerir títulos que resulten novedosos, no que sea reiterativo en relación al historial de visualizaciones de cada perfil.
 - En línea con el punto anterior, al comparar las predicciones contra las visualizaciones reales del set de *test*, excluiremos tanto los contenidos que ya hayan sido vistos por cada perfil en el set de *train* como las nuevas incorporaciones del catálogo VOD de Flow del mes del set de *test*.
 - El set de *test* es privado, lo cual significa que los participantes no tendrán acceso a él.
 
@@ -119,7 +127,7 @@ En el directorio de ejemplos hay una *notebook* con el código para replicar los
 
 
 ### Baseline
-A modo de *baseline*, **el valor de MAP que se debe superar es 0,014**. Este valor se obtiene con un recomendador *naïve* que simplemente recomienda los veinte contenidos más populares durante el trimestre de *train* (en términos de la cantidad de perfiles que los vieron al menos una vez), filtrando previamente los contenidos ya vistos. **Para ingresar al _leaderboard_ de la competencia se deberá obtener un MAP mayor a este _baseline_**
+A modo de *baseline*, **el valor de MAP que se debe superar es 0,014**. Este valor se obtiene con un recomendador *naïve* que simplemente recomienda los veinte contenidos más populares durante el trimestre de *train* (en términos de la cantidad de perfiles distintos que los vieron al menos una vez), filtrando previamente los contenidos ya vistos. **Para ingresar al _leaderboard_ de la competencia se deberá obtener un MAP mayor a este _baseline_**
 
 
 ## Entregables :paperclip:
@@ -134,9 +142,11 @@ Las recomendaciones deben enviarse en un archivo csv con la siguiente estructura
 
 Los valores del csv deberán estar separados por comas, y las variables no deben tener encabezado. Para garantizar la concordancia de las predicciones con el set de testeo, los registros del csv deberán estar ordenados por **account_id**, de menor a mayor.
 
-En el directorio de ejemplos proporcionamos un archivo de envío de muestra para ilustrar el formato esperado para asegurarnos de que no se pierda ningún detalle.
-    
+En el directorio de ejemplos proporcionamos un archivo de envío de muestra para ilustrar el formato esperado de cada *submit*.
+
 ### Código
 
 El procesamiento de los datos y metadatos provistos (y los datos adicionales que los participantes deseen incorporar), el desarrollo del sistema de recomendación y la generación de las recomendaciones para cada perfil deberá
 hacerse con un **programa de código reproducible y abierto (*open source*)**. Los participantes podrán trabajar con el lenguaje y las herramientas de programación que deseen mientras los programas cumplan con estos dos requisitos. Asimismo, el código deberá contar con una mínima documentación que explique el paso a paso.
+
+Tanto las recomendaciones como el código (comprimido en caso de tratarse de múltiples archivos) deberán enviarse a través de [este formulario](https://docs.google.com/forms/d/e/1FAIpQLSeaSiQmJF51ws74DnhfRw1RBSXVFgqZu3BzWq-hc19htkMhzA/viewform). **Sólo se aceptará una carga diaria (máximo) por participante**.
