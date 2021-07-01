@@ -127,7 +127,7 @@ En el directorio de ejemplos hay una *notebook* con el código para replicar los
 
 
 ### Baseline
-A modo de *baseline*, **el valor de MAP que se debe superar es 0,014**. Este valor se obtiene con un recomendador *naïve* que simplemente recomienda los veinte contenidos más populares durante el trimestre de *train* (en términos de la cantidad de perfiles distintos que los vieron al menos una vez), filtrando previamente los contenidos ya vistos. **Para ingresar al _leaderboard_ de la competencia se deberá obtener un MAP mayor a este _baseline_**
+A modo de *baseline*, **el valor de MAP que se debe superar es 0,014**. Este valor se obtiene con un recomendador *naïve* que simplemente recomienda los veinte contenidos más populares durante el trimestre de *train* (en términos de la cantidad de perfiles distintos que los vieron al menos una vez), filtrando previamente los contenidos ya vistos. **Para ingresar al _leaderboard_ de la competencia se deberá obtener una MAP mayor a este _baseline_**.
 
 
 ## Entregables :paperclip:
