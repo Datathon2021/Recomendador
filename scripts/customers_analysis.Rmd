@@ -1,0 +1,25 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r reading data}
+library(tidyverse)
+
+data_path <- 'C:/Users/gomez/Documents/GitHub/CampusParty_Recomendador/data/'
+data <- readr::read_csv(paste(data_path, 'train.csv', sep = ""))
+```
+
+```{r}
+data$customer_id %>% summary()
+```
+
+```{r}
+data_by_customer <- split(data, data$customer_id)
+customer <- data_by_customer[['404']]
+glimpse(customer)
+```
+```{r}
+customer$device_type %>% table()
+```
+
